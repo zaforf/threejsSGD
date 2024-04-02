@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import * as d3 from "d3";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GUI } from 'dat.gui';
-import './style.css';
 
 let renderer, scene, camera, textureLoader;
 let camFactor = {zoom: 100};
