@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 let renderer, scene, camera, textureLoader;
 let camFactor = {zoom: 100};
@@ -261,7 +261,7 @@ function updateMovingPoint(i,x,z) {
 }
 
 function gradientDescent() {
-  const scale = 2e-3;
+  const scale = -2e-3;
   for (let i=0;i<pointList.length;i++) {
     let currPos = pointList[i].position;
     let xPos = currPos.x*2;
