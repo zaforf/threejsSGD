@@ -34,7 +34,11 @@
       </p>
       <div class="collapse" id="collapse">
         <div class="card card-body info text-white">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          The goal of this simulation is to visualize a large number of points performing gradient descent on a mock loss function. I created it to gain familiarity with Three.js while hopefully helping others visualize this algorithm central to machine learning.
+          <br><br>
+          Note that in real machine learning, the model would be analogous to only a single point—multiple are shown to be more visually interesting and show the effect of random weight initialization. Further, the real loss function would have many many more dimensions, making it almost impossible to visualize. Lastly, unlike real machine learning, the gradient of the loss function is not actually being computed here. Instead, this simulation approximates the gradient through numerical differentiation—namely, the input values are separately changed by a very small amount and the effects on the loss are combined.
+          <br><br>
+          The function and graphing code is adapted from <a href="https://observablehq.com/@laotzunami/3d-graphs-with-three-js" target="_blank" rel="noopener noreferrer">https://observablehq.com/@laotzunami/3d-graphs-with-three-js</a>
         </div>
       </div>
     </div>
