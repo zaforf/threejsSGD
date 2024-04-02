@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import * as d3 from "d3";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { GUI } from 'dat.gui';
 
 let renderer, scene, camera, textureLoader;
 let camFactor = {zoom: 100};
@@ -18,7 +17,7 @@ let lineList = [];
 let cnt = 0, grad = false;
 
 const pi = Math.PI;
-const gui = new GUI();
+const gui = new dat.GUI();
 const h = 1e-4;
 const params = { t : 0 };
 const MAX_POINTS = 1000;
